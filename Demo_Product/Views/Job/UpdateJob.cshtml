@@ -1,0 +1,19 @@
+﻿@model Job
+@{
+    ViewData["Title"] = "UpdateJob";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>İş Güncelleme Sayfası</h1>
+
+<form method="post">
+    @Html.Label("İş Id")
+    @Html.TextBoxFor(x=>x.JobId,new { @class="form-control"})
+    <br />
+    @Html.Label("İsim")
+    @Html.TextBoxFor(x=>x.Name,new { @class="form-control"})
+    <br />
+
+
+    <button class="btn btn-outline-info">Güncelle</button>
+</form>

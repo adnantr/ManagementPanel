@@ -1,0 +1,17 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Kategori Güncelleme Sayfası</h1>
+<form method="post">
+    @Html.Label("Kategori Id")
+    @Html.TextBoxFor(x=>x.CategoryId,new { @class="form-control"})
+    <br />
+    @Html.Label("Ürün Adı")
+    @Html.TextBoxFor(x=>x.CategoryName,new { @class="form-control"})
+    <br />
+    <button class="btn btn-outline-info">Güncelle</button>
+</form>
+
